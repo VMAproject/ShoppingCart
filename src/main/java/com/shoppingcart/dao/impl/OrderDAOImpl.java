@@ -1,11 +1,5 @@
 package com.shoppingcart.dao.impl;
 
-/**
- * @Created_By Mikhail Verlamov.
- * @GitHub: github.com/VMAproject.
- * @Mail: verlamov.m@gmail.com.
- * Date 09.02.17 Time 12:34
- */
 
 import com.shoppingcart.dao.OrderDAO;
 import com.shoppingcart.dao.ProductDAO;

@@ -15,12 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @Created_By Mikhail Verlamov.
- * @GitHub: github.com/VMAproject.
- * @Mail: verlamov.m@gmail.com.
- * Date 09.02.17 Time 12:39
- */
+
 @Service
 public class MyDBAuthenticationService implements UserDetailsService {
 

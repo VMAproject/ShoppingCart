@@ -19,15 +19,21 @@ public class Account implements Serializable {
 
     public static final String ROLE_MANAGER = "MANAGER";
     public static final String ROLE_EMPLOYEE = "EMPLOYEE";
+
     @Id
     @Column(name = "User_Name", length = 20, nullable = false)
     private String userName;
+
     @Column(name = "Password", length = 20, nullable = false)
     private String password;
+
     @Column(name = "Active", length = 1, nullable = false)
     private boolean active;
+
     @Column(name = "User_Role", length = 20, nullable = false)
     private String userRole;
+
+
 
 
 }
