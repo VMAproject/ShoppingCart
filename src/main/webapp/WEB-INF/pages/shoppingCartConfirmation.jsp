@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html>
@@ -12,14 +12,13 @@
 
 </head>
 <body>
-<jsp:include page="_header.jsp" />
+<jsp:include page="_header.jsp"/>
 
-<jsp:include page="_menu.jsp" />
+<jsp:include page="_menu.jsp"/>
 
 <fmt:setLocale value="en_US" scope="session"/>
 
 <div class="page-title">Confirmation</div>
-
 
 
 <div class="customer-info-container">
@@ -53,7 +52,7 @@
         Customer Info</a>
 
     <!-- Send/Save -->
-    <input type="submit" value="Send" class="button-send-sc" />
+    <input type="submit" value="Send" class="button-send-sc"/>
 </form>
 
 <div class="container">
@@ -62,9 +61,10 @@
         <div class="product-preview-container">
             <ul>
                 <li><img class="product-image"
-                         src="${pageContext.request.contextPath}/productImage?code=${cartLineInfo.productInfo.code}" /></li>
+                         src="${pageContext.request.contextPath}/productImage?code=${cartLineInfo.productInfo.code}"/>
+                </li>
                 <li>Code: ${cartLineInfo.productInfo.code} <input
-                        type="hidden" name="code" value="${cartLineInfo.productInfo.code}" />
+                        type="hidden" name="code" value="${cartLineInfo.productInfo.code}"/>
                 </li>
                 <li>Name: ${cartLineInfo.productInfo.name}</li>
                 <li>Price: <span class="price">
@@ -83,7 +83,7 @@
 
 </div>
 
-<jsp:include page="_footer.jsp" />
+<jsp:include page="_footer.jsp"/>
 
 </body>
 </html>

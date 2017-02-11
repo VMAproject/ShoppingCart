@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html>
@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<jsp:include page="_header.jsp" />
-<jsp:include page="_menu.jsp" />
+<jsp:include page="_header.jsp"/>
+<jsp:include page="_menu.jsp"/>
 
 <fmt:setLocale value="en_US" scope="session"/>
 
@@ -50,7 +50,7 @@
 </table>
 <c:if test="${paginationResult.totalPages > 1}">
     <div class="page-navigator">
-        <c:forEach items="${paginationResult.navigationPages}" var = "page">
+        <c:forEach items="${paginationResult.navigationPages}" var="page">
             <c:if test="${page != -1 }">
                 <a href="orderList?page=${page}" class="nav-item">${page}</a>
             </c:if>
@@ -63,9 +63,7 @@
 </c:if>
 
 
-
-
-<jsp:include page="_footer.jsp" />
+<jsp:include page="_footer.jsp"/>
 
 </body>
 </html>

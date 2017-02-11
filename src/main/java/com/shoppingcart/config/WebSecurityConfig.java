@@ -1,7 +1,6 @@
 package com.shoppingcart.config;
 
 
-
 import com.shoppingcart.authentication.MyDBAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

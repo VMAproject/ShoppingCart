@@ -1,6 +1,8 @@
 package com.shoppingcart.model;
 
+import lombok.Data;
 
+@Data
 public class CartLineInfo {
 
     private ProductInfo productInfo;

@@ -39,6 +39,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
+
     // Config UTF-8 Encoding.
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {

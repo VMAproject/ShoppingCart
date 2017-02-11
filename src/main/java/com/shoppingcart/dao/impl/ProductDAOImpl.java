@@ -1,7 +1,6 @@
 package com.shoppingcart.dao.impl;
 
 
-
 import com.shoppingcart.dao.ProductDAO;
 import com.shoppingcart.entity.Product;
 import com.shoppingcart.model.PaginationResult;
