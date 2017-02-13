@@ -33,6 +33,9 @@ public class Account implements Serializable {
 
     @Column(name = "User_Role", length = 20, nullable = false)
     private String userRole;
+//
+//    @Column(name = "Mail", length = 150, nullable = false)
+//    private String mail;
 
 
 }

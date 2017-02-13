@@ -68,7 +68,7 @@ public class ProductDAOImpl implements ProductDAO {
             this.sessionFactory.getCurrentSession().persist(product);
         }
         // If error in DB, Exceptions will be thrown out immediately
-        // Nếu có lỗi tại DB, ngoại lệ sẽ ném ra ngay lập tức
+
         this.sessionFactory.getCurrentSession().flush();
     }
 

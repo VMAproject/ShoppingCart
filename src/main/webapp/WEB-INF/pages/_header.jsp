@@ -8,6 +8,8 @@
     <div class="header-bar">
         <c:if test="${pageContext.request.userPrincipal.name != null}">
             Hello
+
+
             <a href="${pageContext.request.contextPath}/accountInfo">
                     ${pageContext.request.userPrincipal.name} </a>
             &nbsp;|&nbsp;
@@ -15,6 +17,7 @@
 
         </c:if>
         <c:if test="${pageContext.request.userPrincipal.name == null}">
+            <a href="${pageContext.request.contextPath}/registration">Registration</a>
             <a href="${pageContext.request.contextPath}/login">Login</a>
         </c:if>
     </div>
