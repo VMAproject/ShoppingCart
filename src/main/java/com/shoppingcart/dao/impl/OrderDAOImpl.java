@@ -78,7 +78,6 @@ public class OrderDAOImpl implements OrderDAO {
         }
 
         // Set OrderNum for report.
-        // Set OrderNum để thông báo cho người dùng.
         cartInfo.setOrderNum(orderNum);
     }
 
