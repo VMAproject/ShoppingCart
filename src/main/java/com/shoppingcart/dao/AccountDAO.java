@@ -5,19 +5,11 @@ import com.shoppingcart.entity.Account;
 
 public interface AccountDAO {
 
-//    Account findById(String userName);
-//
-//    void saveAccount(Account account);
-//
-//    void deleteAccountByUserName(String userName);
-//
-//    List<Account> allAccounts();
 
+    void saveAccount(Account account);
     ////////////////////////////////////////////
 
     Account findAccount(String userName);
-
-
 
 
 }

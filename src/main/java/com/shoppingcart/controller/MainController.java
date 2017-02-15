@@ -64,6 +64,11 @@ public class MainController {
 
     }
 
+    @RequestMapping("/registration")
+    public String registration(){
+        return "registration";
+    }
+
     @RequestMapping("/403")
     public String accessDenied() {
         return "/403";

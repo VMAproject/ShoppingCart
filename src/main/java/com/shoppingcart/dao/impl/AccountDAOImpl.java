@@ -16,33 +16,17 @@ public class AccountDAOImpl implements AccountDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
-//
-//    private Session getCurrentSession() {
-//        return sessionFactory.getCurrentSession();
-//    }
-//
-//    @Override
-//    public Account findById(String userName) {
-//        Account account = (Account)getCurrentSession().get(Account.class,userName);
-//        return account;
-//    }
-//
-//    @Override
-//    public void saveAccount(Account account) {
-////        Account saveAccount
-//
-//
-//    }
-//
-//    @Override
-//    public void deleteAccountByUserName(String userName) {
-//
-//    }
-//
-//    @Override
-//    public List<Account> allAccounts() {
-//        return null;
-//    }
+
+    private Session getCurrentSession() {
+        return sessionFactory.getCurrentSession();
+    }
+
+
+    @Override
+    public void saveAccount(Account account) {
+        getCurrentSession().persist(account);
+
+    }
 
     @Override
     public Account findAccount(String userName) {
